@@ -1,0 +1,758 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,700';
+
+/* selector universal, para todo el documento */
+*{
+	box-sizing: border-box;
+	/* MUY IMPORTANTE!!! descuenta del width y height, lo sumado en padding y border */
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	color: #808285;
+}
+
+ ul, ol{
+	list-style: none; /* elimina la viñeta */
+	margin: 0;
+	padding: 0; /* relleno, dentro del contenedor */
+ }
+
+ figure{
+ 	margin: 0; /* distanciamiento, fuera del contenedor */
+ }
+
+ img{
+ 	max-width: 90%; /* LA IMAGEN SE VA A AJUSTAR AL TAMAÑO DE SU PADRE, PERO NO VA A SUPERAR SU LA MEDIDA MAXIMA */
+ }
+
+h3{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 3px;
+	font-size: 35px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin: 0;
+}
+
+h4{
+	letter-spacing: 3px;
+	font-size: 18px;
+	margin: 15px 0 15px 0;
+}
+
+#banner{
+	background: url(../imagenes/bannercv2.jpg) center top no-repeat;
+	background-size: cover; /* la imagen ocupa todo el espacio en horizontal y vertical */
+	text-align: center; /* el padre tiene text alin center entonces el resto se centra */
+	padding: 155px 0;
+}
+
+.container{
+	max-width: 1200%; /* medida maxima de width, sino medidas inferiores ocupa el 100% */
+	margin: auto;
+}
+
+.myname{
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: solid 2px white;
+	display: inline-block;
+	padding: 30px;
+}
+
+.titulo_principal{
+	text-transform: uppercase;
+	font-size: 100px;
+	text-align: center;
+	padding-bottom: -7px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 3px;
+	margin: 0;
+}
+
+.bajada_titulo{
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-weight: lighter;
+	margin: 0;
+}
+
+.aboutme{
+	background-color: #f22c35;
+	color: white;
+	margin: 0;
+	height: 600px;
+}
+
+.myinformation{
+	width: 77%; /* por regla de 3 no me salio, asi que fui probando para que me respete los px*/
+	margin: auto;
+}
+
+.columna_data{
+	width: 48%;
+	float: left;
+	margin: auto;
+}
+
+.columna_data h4{
+	width: 100%;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.columna_data p{
+	width: 100%;
+	text-align: left;
+	font-weight: lighter;
+	line-height: 22px;
+	font-size: 16px;
+}
+
+.date-contact{
+	padding-top: 15px;
+	line-height: 22px;
+}
+
+.column1{
+	color: white;
+	text-align: left;
+	font-weight: lighter;
+}
+
+.column2{
+	padding-left: 18px;
+	font-size: 16px;
+}
+
+.logo{
+	float: right;
+	width: 41%;
+}
+
+.cleaner{
+	clear: both; /* LIMPIAR EL FLOAT */
+}
+
+.lenguagesdomain{
+	background-color: #f1f2f2;
+	height: 420px;
+}
+
+.lenguagesdomain h3{
+	color: #f22c35;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.container_programas{
+	width: 77%;
+	margin: auto;
+}
+
+.programa{
+	width: 16.6%; 
+	text-align: center;
+	float: left;
+	margin-top: 20px; /* calcular porcentaje */
+	margin-bottom: 80px;
+}
+
+.programa h4{
+	color: #ff5f57;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.section_experience{
+	height: 450px;
+	background-color: #e0e1e2;
+	text-align: center;
+}
+
+.section_experience h3{
+	color: #f22c35;
+}
+
+.container_experience{
+	width: 77%;
+	margin: auto;
+	text-align: center;
+}
+
+.experience{
+	text-align: center;
+	float: left;
+	text-align: left;
+	width: 33%;
+	margin-bottom: 20px;
+}
+
+.experience h4{
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.experience span{
+	font-size: 14px;
+	color: #ff5f57;
+	margin: 0;
+	letter-spacing: 2px;
+}
+
+.experience p{
+	font-weight: bolder;
+	letter-spacing: 1px;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.section_education{
+	height: 320px;
+	background-color: #f1f2f2;
+	text-align: center;
+}
+
+.section_education h3{
+	color: #f22c35;
+}
+
+.container_education{
+	width: 77%;
+	margin: auto;
+	text-align: left;
+}
+
+.education{
+	text-align: center;
+	float: left;
+	text-align: left;
+	width: 38.5%;
+}
+
+.education:nth-of-type(1){
+	width: 23%;
+}
+
+.education h4{
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: left;
+}
+
+.education span{
+	text-align: left;
+	font-size: 14px;
+	color: #f22c35;
+	margin: 0;
+	letter-spacing: 2px;
+}
+
+.education p{
+	font-weight: bolder;
+	letter-spacing: 1px;
+	margin-top: 5px;
+	font-size: 12px;
+	text-align: left;
+}
+
+
+.container-contacto{
+	background-color: #ffaf6d;
+	height: 400px;
+	margin: auto;
+}
+
+.container-formulario{
+	width: 77%;
+	margin: auto;
+}
+
+.container-contacto h3{
+	color: white;
+}
+
+.left_data{
+	width: 49%;
+	float: left;
+	margin: auto;
+}
+
+.left_data input{
+	height: 50px;
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: inherit;
+	font-size: 14px;
+	border: none;
+	padding-left: 15px;
+}
+
+.right_data{
+	width: 49%;
+	float: right;
+}
+
+.right_data textarea{
+	height: 120px;
+	width: 100%;
+	font-family: inherit;
+	font-size: 14px;
+	border: none;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+.container-contacto button{
+	display: block;
+	margin: auto;
+	background-color: #f22c35;
+	border: none;
+	width: 13.5%;
+	height: 50px;
+	font-family: inherit;
+	color: white;
+	letter-spacing: 3px;
+	font-size: 17px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.main_footer{
+	background-color: #f22c35;
+	height: 100px;
+	text-align: center;
+	margin: auto;
+}
+
+.redes_footer{
+	margin: 20px 0;
+	display: inline-block;
+	font-size: 50px !important;
+	color: white;
+}
+
+@media (max-width: 1000px){ /* maximo 1000px de ahi para resoluciones inferiores */
+	.container, {  /* que ocupe el 95% para que tenga un margen y no llegue al borde */
+		width: 95%;
+	}
+	
+	.titulo_principal{
+		font-size: 85px;
+	}
+
+	.bajada_titulo{
+		font-size: 35px;
+	}
+
+	.aboutme{
+		background-color: #f22c35;
+		color: white;
+		margin: 0;
+		height: 530px;
+	}
+
+	.columna_data{
+		width: 48%;
+	}
+
+	.columna_data h4{
+		font-size: 18px;
+	}
+
+	.columna_data p{
+		line-height: 19px;
+		font-size: 14px;
+	}
+
+	.date-contact{
+		padding-top: 5px;
+		line-height: 19px;
+	}
+
+	.column2{
+		padding-left: 18px;
+		font-size: 14px;
+	}
+
+	.logo{
+		margin-top: 20px;
+	}
+	
+	.lenguagesdomain{
+		background-color: #f1f2f2;
+		height: 660px;
+	}
+
+	.programa{
+		width: 33%; 
+		margin-top: 20px; /* calcular porcentaje */
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	
+	.programa h4{
+		font-size: 18px;
+	}
+
+	.section_experience{
+		height: 430px;
+	}
+
+	.experience h4{
+		font-size: 14px;
+	}
+
+	.education{
+		width: 33%;
+	}
+
+	.education:nth-of-type(1){
+		width: 27%;
+	}
+
+	.education:nth-of-type(2){
+		width: 39%;
+	}
+
+	.education h4{
+		font-size: 14px;
+	}
+
+	.left_data{
+		width: 48.5%;
+	}
+
+	.right_data{
+		width: 48.5%;
+	}
+
+	.container-contacto button{
+		width: 22%;
+	}
+}
+
+@media (max-width: 781px){ /* maximo 752px de ahi para resoluciones inferiores */
+	.titulo_principal{
+		font-size: 70px;
+	}
+
+	.bajada_titulo{
+		font-size: 25px;
+	}
+
+	.aboutme{
+		height: 505px;
+	}
+
+	.columna_data h4{
+		font-size: 16px;
+	}
+
+	.columna_data p{
+		line-height: 17px;
+		font-size: 12px;
+	}
+
+	.date-contact{
+		padding-top: 5px;
+		line-height: 17px;
+	}
+
+	.column2{
+		font-size: 12px;
+	}
+	
+	.logo{
+		margin-top: 40px;
+	}
+
+	.lenguagesdomain{
+		height: 640px;
+	}
+
+	.programa h4{
+		font-size: 16px;
+	}
+
+	.section_experience{
+		height: 550px;
+		margin: auto;
+	}
+
+	.experience{
+		text-align: center;
+		float: left;
+		text-align: left;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+
+	.experience h4{
+		font-size: 16px;
+	}
+
+	.section_education{
+		height: 330px;
+	}
+
+	.education{
+		width: 32%;
+	}
+
+	.education:nth-of-type(1){
+		width: 30%;
+	}
+
+	.education:nth-of-type(2){
+		width: 32%;
+		margin-left: 20px;
+		margin-right: 12px;
+	}
+
+	.education h4{
+		font-size: 16px;
+	}
+
+	.container-contacto button{
+		width: 25%;
+	}
+}
+
+@media (max-width: 700px){
+	.lenguagesdomain{
+		height: 690px;
+	}
+
+	.education{
+		width: 32%;
+	}
+
+	.education:nth-of-type(1){
+		width: 29%;
+	}
+
+	.education:nth-of-type(2){
+		width: 32%;
+		margin-left: 20px;
+		margin-right: 15px;
+	}
+}	
+
+@media (max-width: 700px){
+	.lenguagesdomain{
+		height: 690px;
+	}
+
+	.education{
+		width: 30%;
+	}
+
+	.education:nth-of-type(1){
+		width: 29%;
+	}
+
+	.education:nth-of-type(2){
+		width: 30%;
+		margin-left: 20px;
+		margin-right: 15px;
+	}
+
+	.container-contacto{
+		height: 550px;
+	}
+
+	.left_data{
+		width: 100%;
+		float: none;
+	}
+
+	.left_data input{
+		width: 100%;
+	}
+
+	.right_data{
+		width: 100%;
+		float: none;
+	}
+
+	.right_data textarea{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.container-contacto button{
+		width: 45%;
+	}
+}	
+
+@media (max-width: 600px){ /* maximo 588px de ahi para resoluciones inferiores */
+	.titulo_principal{
+		font-size: 52px;
+	}
+
+	.bajada_titulo{
+		font-size: 20px;
+	}
+
+	.aboutme{
+		height: 570px;
+	}
+
+	.lenguagesdomain{
+		height: 680px;
+	}
+
+	.section_experience{
+		height: 950px;
+	}
+
+	.experience{
+		width: 100%;
+		text-align: center;
+	}
+
+	.experience h4{
+		font-size: 18px;
+	}
+	
+	.experience span{
+		font-size: 16px;
+	}
+
+	.experience p{
+		font-size: 14px;
+	}
+
+	.section_education{
+		height: 600px;
+	}
+
+	.education{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.education:nth-of-type(1){
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.education:nth-of-type(2){
+		width: 100%;
+		text-align: center;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.education h4{
+		font-size: 18px;
+		text-align: center;
+	}
+	
+	.education span{
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.education p{
+		font-size: 14px;
+		text-align: center;
+	}
+
+}
+
+@media (max-width: 490px){ /* maximo 490px de ahi para resoluciones inferiores */
+	#banner{
+		display: none;
+	}
+
+	.aboutme{
+		height: 820px;
+	}
+
+	.myinformation{
+		width: 77%; /* por regla de 3 no me salio, asi que fui probando para que me respete los px*/
+		margin: auto;
+	}
+
+	.columna_data{
+		width: 100%;
+		float: none;
+		margin: auto;
+	}
+
+	.columna_data h4{
+		width: 100%;
+		text-align: center;
+		font-size: 22px;
+		margin-top: 0;
+	}
+
+	.columna_data p{
+		width: 100%;
+		text-align: center;
+		line-height: 19px;
+		font-size: 13px;
+	}
+
+	.date-contact{
+		line-height: 20px;
+		margin: auto;
+		margin-top: 30px;
+	}
+
+	.date-contact table{
+		text-align: center;
+		width: 100%;
+	}
+
+	.column1{
+		text-align: center;
+		padding-left: 50px;
+	}
+
+	.column2{
+		text-align: left;
+		font-size: 13px;
+		padding-left: 18px;
+	}
+
+	.logo{
+		float: none;
+		width: 77%;
+		margin: auto;
+		margin-top: 30px;
+	}
+	
+	.logo img{
+		text-align: center;
+		width: 100%;
+	}
+	
+	.lenguagesdomain{
+		height: 930px;
+	}
+
+	.programa{
+		width: 48%; 
+		margin-top: 20px; /* calcular porcentaje */
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	
+	.programa h4{
+		font-size: 18px;
+	}
+
+}
